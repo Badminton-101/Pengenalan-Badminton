@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Kuiz</title>
+        <link rel="stylesheet" href="style.css" />
+    </head>
+    <body>
+        <a href="index.html"><button class="home-button">&#127934;</button></a>
+        <main>
+            <h2><b>KUIZ</b></h2>
+
+            <form id="kuizbox">
+                <h3>1. Adakah badminton adalah sejenis permainan jaring?</h3>
+                <br />
+                <input type="radio" name="quest1" id="true1" /> Ya <br />
+                <input type="radio" name="quest1" /> Tidak <br />
+
+                <h3><br />2. Siapakh ikon sukan badminton di Malaysia?</h3>
+                <br />
+                <input type="radio" name="quest2" /> Dato Misbun Sidek <br />
+                <input type="radio" name="quest2" id="true2" /> Dato Lee Chong
+                Wei <br />
+                <input type="radio" name="quest2" /> Lee Zii Jia<br />
+                <input type="radio" name="quest2" /> Chen Long<br />
+
+                <h3>
+                    <br />3. Sebelum istilah "badminton" diperkenalkan, sukan
+                    ini pernah dikenali dengan nama ____
+                </h3>
+                <br />
+                <input type="radio" name="quest3" /> bulu hayun <br />
+                <input type="radio" name="quest3" /> bulu ayam <br />
+                <input type="radio" name="quest3" id="true3" /> bulu tangkis<br />
+                <input type="radio" name="quest3" /> bulu terbang<br />
+
+                <h3>
+                    <br />4. Yang manakah <b>BUKAN</b> kategori yang betul dalam
+                    badminton?
+                </h3>
+                <br />
+                <input type="radio" name="quest4" /> beregu lelaki <br />
+                <input type="radio" name="quest4" /> beregu campuran <br />
+                <input type="radio" name="quest4" id="true4" />
+                percampuran<br />
+                <input type="radio" name="quest4" /> perseorangan<br />
+
+                <h3>
+                    <br />5. Permainan badminton memerlukan peralatan seperti:
+                </h3>
+                <br />
+                <input type="radio" name="quest5" id="true5" /> gelanggang,
+                jaring, raket dan bulu tangkis <br />
+                <input type="radio" name="quest5" /> padang, raket, bulu tangkis
+                dan wisel <br />
+                <input type="radio" name="quest5" /> raket, bulu tangkis,
+                jaring, tuala dan air<br />
+                <input type="radio" name="quest5" /> gelanggang, bulu tangkis,
+                jaring dan kayu<br />
+
+                <h3>
+                    <br />6. Kedudukan "umpire" yang mengadili perlawanan
+                    badminton berada di ____
+                </h3>
+                <br />
+                <input type="radio" name="quest6" /> tengah dan belakang
+                gelanggang <br />
+                <input type="radio" name="quest6" /> sisi dan belakang
+                gelanggang <br />
+                <input type="radio" name="quest6" /> hujung dan bucu
+                gelanggang<br />
+                <input type="radio" name="quest6" id="true6" /> tengah dan sisi
+                gelanggang<br />
+
+                <h3>
+                    <br />7. Pertubuhan badminton di peringkat antarabangsa
+                    dikenali sebagai Persekutuan Badminton dunia atau
+                    singkatannya, _____
+                </h3>
+                <br />
+                <input type="radio" name="quest7" id="true7" /> BWF <br />
+                <input type="radio" name="quest7" /> WBC <br />
+                <input type="radio" name="quest7" /> WWE<br />
+                <input type="radio" name="quest7" /> FIFA<br />
+
+                <br /><br /><img
+                    src="images/leechongwei.jpg"
+                    style="width: 400px; height: 300px"
+                />
+                <h3>
+                    <br />8. Apakah kemahiran yang ditunjukkan dalam gambar di
+                    atas?
+                </h3>
+                <br />
+                <input type="radio" name="quest8" /> pukulan lob <br />
+                <input type="radio" name="quest8" /> pukulan smash <br />
+                <input type="radio" name="quest8" id="true8" /> servis<br />
+
+                <h3>
+                    <br />9. Pukulan ______ adalah pukulan berkuasa tinggi untuk
+                    memastikan rall serta-merta
+                </h3>
+                <br />
+                <input type="radio" name="quest9" /> junam <br />
+                <input type="radio" name="quest9" /> lob <br />
+                <input type="radio" name="quest9" /> kilas<br />
+                <input type="radio" name="quest9" id="true9" /> smash<br />
+
+                <h3>
+                    <br />10. Berikut adalah kejohanan badminton di peringkat
+                    anarabangsa <b>KECUALI</b>
+                </h3>
+                <br />
+                <input type="radio" name="quest10" /> Piala Sudirman <br />
+                <input type="radio" name="quest10" id="true10" /> Piala
+                Summbangsih <br />
+                <input type="radio" name="quest10" /> Piala Thomas<br />
+                <input type="radio" name="quest10" /> Piala Uber<br />
+                <br /><br />
+                <button class="submit" onclick="check()">SUBMIT QUIZ</button>
+                <script>
+                    function check() {
+                        var score = 0;
+                        if (document.getElementById("true1").checked) {
+                            score++;
+                        }
+                        if (document.getElementById("true2").checked) {
+                            score++;
+                        }
+                        if (document.getElementById("true3").checked) {
+                            score++;
+                        }
+                        if (document.getElementById("true4").checked) {
+                            score++;
+                        }
+                        if (document.getElementById("true5").checked) {
+                            score++;
+                        }
+                        if (document.getElementById("true6").checked) {
+                            score++;
+                        }
+                        if (document.getElementById("true7").checked) {
+                            score++;
+                        }
+                        if (document.getElementById("true8").checked) {
+                            score++;
+                        }
+                        if (document.getElementById("true9").checked) {
+                            score++;
+                        }
+                        if (document.getElementById("true10").checked) {
+                            score++;
+                        }
+                        var mark = score * 10;
+                        var salah = 10 - score;
+                        alert(
+                            "Betul = " +
+                                score +
+                                "\nSalah = " +
+                                salah +
+                                "\nMarkah = " +
+                                mark
+                        );
+                    }
+                </script>
+            </form>
+        </main>
+        <footer>
+            <p>LCS interns</p>
+        </footer>
+    </body>
+</html>

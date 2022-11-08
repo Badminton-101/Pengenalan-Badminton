@@ -1,0 +1,194 @@
+@import "https://fonts.googleapis.com/css?family=Ubuntu:300, 400, 500, 700";
+
+*,
+*:after,
+*:before {
+    margin: 0;
+    padding: 0;
+}
+
+.svg-container {
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.home-button {
+    background-color: aquamarine;
+    border-color: aqua;
+    position: fixed;
+    border-radius: 40%;
+    font-size: 40px;
+    margin: 20px 20px;
+    z-index: 5;
+}
+
+.bottombutton {
+    background-color: aquamarine;
+    border-color: aqua;
+    position: fixed;
+    border-radius: 30%;
+    font-size: 25px;
+    padding: 5px;
+    margin: 900px 1800px;
+    z-index: 5;
+}
+
+.back-button {
+    background-color: aquamarine;
+    border-color: aqua;
+    position: fixed;
+    border-radius: 40%;
+    font-size: 30px;
+    margin: 20px 20px;
+    padding: 10px;
+    z-index: 5;
+}
+
+body {
+    background: #fff;
+    color: #333;
+    font-family: "Ubuntu", sans-serif;
+    position: relative;
+}
+
+h3 {
+    font-weight: 400;
+}
+
+header {
+    color: #fff;
+    padding-top: 10vw;
+    padding-bottom: 30vw;
+    text-align: center;
+}
+
+header img {
+    opacity: 0.7;
+}
+@media (max-width: 1300px) {
+    header img {
+        opacity: 0;
+    }
+}
+main {
+    background: linear-gradient(to bottom, #ffffff 0%, #d5d6da 100%);
+    border-bottom: 2px solid rgba(0, 0, 0, 0.2);
+    padding: 10vh 0 40vh;
+    position: relative;
+    text-align: center;
+    overflow: hidden;
+}
+
+main ul li {
+    display: inline-block;
+    list-style: none;
+}
+
+footer {
+    background: #dddee1;
+    padding: 5vh 0;
+    text-align: center;
+    position: relative;
+}
+
+main a {
+    color: black;
+    margin: 10px 5px 10px 5px;
+    float: center;
+    display: block;
+    text-decoration: none;
+    border-radius: 25px;
+    padding: 20px;
+    border: 2px solid rgb(81, 225, 250);
+    background-color: rgb(232, 246, 248);
+}
+main ul li a:hover {
+    background-color: rgb(115, 201, 241);
+}
+
+#Sejarahbox {
+    content: "";
+    clear: both;
+    display: table;
+    border: 1px solid;
+    width: 80%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    box-shadow: -5px 5px rgb(146, 255, 213);
+}
+
+#Sejarahbox h3 {
+    text-align: center;
+    overflow: hidden;
+}
+
+.float-child {
+    float: left;
+    overflow: hidden;
+    max-width: 27%;
+}
+
+.float-child2 {
+    float: left;
+    text-align: justify;
+    padding: 10px;
+    overflow: hidden;
+    margin-left: 0px;
+    width: 65%;
+}
+
+.pegang {
+    text-align: center;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+.table-center {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.pegang tr {
+    display: table;
+    content: "";
+}
+
+.pegang th {
+    padding: 20px;
+    margin: 30px;
+    float: left;
+}
+
+.pegang td {
+    padding: 20px;
+    margin: 30px;
+    float: left;
+}
+
+#kuizbox {
+    border: 1px solid;
+    width: 50%;
+    margin-top: 100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 15px;
+    box-shadow: -5px 5px rgb(146, 255, 213);
+    text-align: left;
+}
+
+.submit {
+    border-radius: 40%;
+    font-size: 15px;
+    padding: 10px;
+}
+
+video {
+    border: 6px skyblue solid;
+    border-radius: 10%;
+    box-shadow: -7px 8px skyblue;
+}
