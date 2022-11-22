@@ -32,7 +32,8 @@
     border-radius: 30%;
     font-size: 25px;
     padding: 5px;
-    margin: 900px 1800px;
+    bottom: 25px;
+    right: 25px;
     z-index: 5;
 }
 
